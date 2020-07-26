@@ -30,9 +30,9 @@ message.addEventListener('keypress',() =>{
 // Listen to events
 // here chat is variable could be anything
 socket.on('chat', (data)=>{
-    typing.innerHTML="";  //while texting is typing string should be ""
+    typing.innerHTML="isTyping";  //while texting is typing string should be ""
     output.innerHTML += '<p> <strong>' + data.handle + ': </strong>' + data.message + '</p>'
-   // typing.innerHTML="";
+    typing.innerHTML="";
 })
 
 socket.on('userisTyping',(data)=>{
