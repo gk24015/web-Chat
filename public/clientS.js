@@ -1,4 +1,4 @@
-const socket = io('https://example.com'); //location of where server is hosting socket app
+const socket = io(); //location of where server is hosting socket app
 
 socket.on('chat-message', data =>{
     console.log(data)
