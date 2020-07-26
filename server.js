@@ -4,7 +4,7 @@ const app = express(); //creates the express app
 const httpserver = require('http').createServer(app); //app is an http server
 const io = require('socket.io')(httpserver);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // http server listening on port
 httpserver.listen(port, function(){
