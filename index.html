@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+</head>
+
+<body>
+
+    <!-- connects to the server and displays results -->
+    <div class="container">
+        <div class="navbar-header">
+            <div class="text justify" ><h1><b>CHIT CHAT</b></h1></div>
+            </div>
+        </div>        
+    <div class="container" id="chat">
+            <div id="chat-window">
+    
+            <div id="output"></div>
+            <div id="typing"></div>
+        </div>
+        
+    <div class="jumbotron">
+        <div class="container-sm">
+            <div class="container-sm">
+              <input id="handle" type="text" placeholder="name" class="form-control"/>
+              <input id="message" type="text" placeholder="message" class="form-control"/>
+              <button id="submit" class="btn btn-md btn-primary ">Send</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- <script src="http://localhost:3000/socket.io/socket.io.js" async defer></script> -->
+
+    <!-- <script src="socket.io/socket.io.js"></script>  -->
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="/clientS.js"></script>
+    <!-- <script>
+            var socket = io();
+        </script> -->
+
+</body>
+
+</html>
